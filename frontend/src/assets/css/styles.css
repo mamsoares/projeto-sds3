@@ -30,3 +30,14 @@ html, body {
 .text-primary {
     color: var(--color-primary) !important;
 }
+
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+  color: var(--color-primary) !important;
+}
+
+a:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
