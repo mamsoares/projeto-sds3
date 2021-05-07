@@ -42,3 +42,23 @@ a:hover {
   cursor: pointer;
   transition: 2s ease-in-out;
 }
+
+.page-link {
+  background: #343a3f;
+  text-decoration: none !important;
+  cursor: pointer;
+  color: var(--color-primary) !important;
+}
+
+.text-bold {
+  font-weight: bold !important;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.dt-total-elements {
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: bold !important;
+  color: #343a3f;
+}

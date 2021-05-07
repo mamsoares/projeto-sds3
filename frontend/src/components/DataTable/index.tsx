@@ -31,6 +31,9 @@ const DataTable = () => {
     <>
       <Pagination page={page} onPageChange={changePage} />
       <div className="table-responsive">
+          <div className="dt-total-elements">
+            Total de {page.totalElements} registro{page.totalElements > 1 ? "s" : ''}.
+          </div>
           <table className="table table-striped table-sm">
               <thead>
                   <tr>
@@ -48,12 +51,16 @@ const DataTable = () => {
                       <td>{item.seller.name}</td>
                       <td>{item.visited}</td>
                       <td>{item.deals}</td>
-                      <td>$ {item.amount.toFixed(2)}</td>
+                      {/* <td>$ {item.amount.toFixed(2)}</td> */}
+                      <td>{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(item.amount)}</td>
                   </tr>
                 ))}
               
               </tbody>
           </table>
+          <div className="dt-total-elements">
+            Total de {page.totalElements} registro{page.totalElements > 1 ? "s" : ''}.
+          </div>
       </div>
       <Pagination page={page} onPageChange={changePage} />
     </>
