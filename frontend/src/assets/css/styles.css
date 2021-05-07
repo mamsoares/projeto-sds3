@@ -40,4 +40,5 @@ a {
 a:hover {
   font-weight: bold;
   cursor: pointer;
+  transition: 2s ease-in-out;
 }
