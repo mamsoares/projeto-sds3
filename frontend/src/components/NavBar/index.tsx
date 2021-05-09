@@ -1,4 +1,4 @@
-import ImgDsDark from "assets/img/complete_logo_dvsuperior.svg"
+import ImgDsDark from "assets/img/complete_logo_devsuperior.svg"
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
