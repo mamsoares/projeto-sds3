@@ -51,8 +51,8 @@ const DataTable = () => {
                       <td>{item.seller.name}</td>
                       <td>{item.visited}</td>
                       <td>{item.deals}</td>
-                      {/* <td>$ {item.amount.toFixed(2)}</td> */}
-                      <td>{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(item.amount)}</td>
+                      <td>$ {item.amount.toFixed(2)}</td>
+                      {/* <td>{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(item.amount)}</td> */}
                   </tr>
                 ))}
               
